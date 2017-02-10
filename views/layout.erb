@@ -15,21 +15,17 @@
       </div>
 
       <div id="navBar" class="row">
-        <div id="navContainer"class="twelve columns">
+        <div id="navContainer"class="">
           <% settings.menu.each do |item| %>
-            <a href="<%= item[:route] %>"<div id="navButton" class="button" onclick="" ><%= item[:title] %></div></a>
+            <a href="<%= item[:route] %>"><div id="navButton" class="button"><%= item[:title] %></div></a>
           <% end %>
-          <!-- Above code replaces lines 23-26  -->
-          <!-- <div id="navButton" class="button" onclick="" >Home</div>
-          <div id="navButton" class="button" onclick="" >Contact</div>
-          <div id="navButton" class="button" onclick="" >Newsletter</div>
-          <div id="navButton" class="button" onclick="" >Video Gallery</div> -->
-        </div>
+
       </div>
       <%= yield %>
 
     </div>
 
+</div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script type="text/javascript" src="js/main.js"></script>
   </body>
