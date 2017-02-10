@@ -7,22 +7,30 @@
     <title>manhattanUnderground</title>
   </head>
   <body>
+
     <div id="main" class="container">
+
       <div id="header" class="row">
-          <div class="two columns">
-            <div class="">
-              <div id="logo" class=""></div>
-            </div>
-          </div>
-          <div class="ten columns">
-            <div class="button" onclick="" >Video Gallery</div>
-            <div class="button" onclick="" >Newsletter</div>
-            <div class="button" onclick="" >Contact</div>
-            <div class="button" onclick="" >Home</div>
-          </div>
+          <div  class="twelve columns"><p>manhattan underground</p></div>
+      </div>
+
+      <div id="navBar" class="row">
+        <div id="navContainer"class="twelve columns">
+          <% settings.menu.each do |item| %>
+            <a href="<%= item[:route] %>"<div id="navButton" class="button" onclick="" ><%= item[:title] %></div></a>
+          <% end %>
+          <!-- Above code replaces lines 23-26  -->
+          <!-- <div id="navButton" class="button" onclick="" >Home</div>
+          <div id="navButton" class="button" onclick="" >Contact</div>
+          <div id="navButton" class="button" onclick="" >Newsletter</div>
+          <div id="navButton" class="button" onclick="" >Video Gallery</div> -->
+        </div>
       </div>
       <%= yield %>
+
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
