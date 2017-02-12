@@ -1,3 +1,8 @@
 source 'https://rubygems.org'
 
-require 'sinatra'
+gem "sinatra"
+gem "sendgrid-ruby"
+gem "ruby_http_client"
+
+
+

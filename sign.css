@@ -1,0 +1,68 @@
+#sign{
+	height: 300px;
+	width: 550px;
+	background-color: green;
+	/*z-index: 1;*/
+}
+
+ div.box {
+  margin-top: 20px;
+  width:50px; height:75px;  
+  border: solid 5px #000;
+  border-color: white transparent transparent transparent;
+  border-radius: 130%/220px 220px 0 0;
+  z-index: 1;
+  margin-top: -200px;
+  margin-left: 80px;
+}
+
+.box #light {
+	/*border: solid red 3px;*/
+	height: 50px;
+	width: 130px;
+	margin-left: -65px;
+	margin-top: 20px;
+	z-index: -1;
+}
+.box #cam{
+	height: 80px;
+	width: 50px;
+	margin-top: -90px;
+	margin-left: 60px;
+}
+
+h1 {
+	font-family: helvetica;
+	font-size: 50px;
+	color: white;
+	text-align: center;
+	top-margin: 100px;
+	float: left;
+	margin-left: 25px;
+/*	border: solid white 3px;*/
+	margin-bottom: 0px;
+}
+
+#_2 {
+	font-size: 50px;
+	text-align: center;
+	margin-right: 25px;
+	margin-bottom: 30px;
+	font-family: helvetica;
+	color: white;
+	float: right;
+/*	border: solid white 3px;*/
+}
+#trains {
+	height: 100px;
+	width: 400px;
+/*	border: solid white 3px;*/
+	background-image: url(trains.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 0px auto;
+	clear: both;
+	z-index: -1;
+
+
+}
