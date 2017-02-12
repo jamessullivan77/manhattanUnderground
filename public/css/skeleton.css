@@ -197,9 +197,9 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #FFF;
+  color: rgb(194,192,185);
   border-color: #888;
-  background-color: black;
+  background-color: rgba(255,255,255,1);
   outline: 0; }
 .button.button-primary,
 button.button-primary,

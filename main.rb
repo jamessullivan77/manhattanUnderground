@@ -1,25 +1,34 @@
-require 'sinatra'
+require 'sinatra']
 require 'sendgrid-ruby'
 require 'ruby_http_client'
+
+set :menu, [
+  {title: "Home",
+   route: "/"},
+  {title: "About",
+   route: "/about"},
+   {title: "Gallery",
+    route: "/gallery"}
+]
 
 get '/' do
   erb :index
 end
 
-get '/contact' do
-  erb :contact
-end
+settings.menu[1..-1].each do |item|
+  get item[:route] do
+    erb item[:route][1..-1].to_sym
+  end
 
 get '/newsletter' do
   erb :newsletter
 end
+
 ##########################################
 #Collecting emails Using Sendgrid
 ##########################################
 post '/newsletter' do 
-	# erb :newsletter
-
-
+# erb :newsletter
 # fistName = params[:first_name]
 # lastName = params[:last_name]
 subject = "#{params[:first_name]} #{params[:last_name]}"
@@ -38,11 +47,9 @@ response = sg.client.mail._('send').post(request_body: mail.to_json)
     #params.inspect
     response.inspect
 
-puts response
+  puts response
 
-redirect ('/newsletter')
-end
+  redirect ('/newsletter')
+  end
 
-get '/gallery' do
-  erb :gallery
 end
