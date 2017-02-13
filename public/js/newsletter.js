@@ -9,25 +9,25 @@ document.addEventListener("DOMContentLoaded",function(){
 	});
 
 
-/* updateInputVisbility will decide whether to 
+/* updateInputVisbility will decide whether to
    show or hide an html element (elTarget) depending
    on whether an option is checked (elTrigger) */
 function updateInputVisibility( elTrigger, elTarget, value ) {
 	if( elTrigger.value === value ) {
-		elTarget.style.display = "block";
+		elTarget.style.display = "inline-block";
 	} else {
 		elTarget.style.display = "none";
 	}
 }
 
-// here I am trying to connect the textarea with the submit button. 
-// Then when the submit button is clicked, the value of the textarea will 
-// then display in the comment space <P> 
+// here I am trying to connect the textarea with the submit button.
+// Then when the submit button is clicked, the value of the textarea will
+// then display in the comment space <P>
 
 var space = document.getElementById("comment_space");
 var submit = document.getElementById("comSub");
 
-document.getElementById("comments").addEventListener("submit", 
+document.getElementById("comments").addEventListener("submit",
 	function(event){
 		event.preventDefault();
 		console.log("submit");
