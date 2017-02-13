@@ -1,0 +1,31 @@
+#add_file{
+	border-radius: 70px;
+	border: solid black 3px;
+	margin-left: 600px;
+}
+#my_file {
+    display: none;
+}
+
+
+/*video{
+	border: solid black 5px;
+	height: 400px;
+	width: 600px;
+	margin-left: 300px;
+	margin-top: 70px;
+}*/
+
+#add_file{
+	margin-top: 40px;
+	margin-right: 220px;
+	right: 30px;
+}
+img{
+	border: solid tan 5px;
+	height: 400px;
+	width: 600px;
+	margin-left: 300px;
+
+}
+
